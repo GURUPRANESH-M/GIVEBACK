@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff; /* Header background color */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #28a745; /* Hero section background color */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Auth Section */
+.auth {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.auth-box {
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Products Section */
+.products {
+    background-color: #343a40; /* Products section background color */
+    color: white;
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-sort {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-sort label {
+    margin-right: 10px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s;
+}
+.product-item h3, 
+.product-item p {
+    color: black; /* Changes the text color to black */
+}
+
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Trusts Section */
+.trusts {
+    background-color: #6c757d; /* Trusts section background color */
+    color: white;
+    padding: 50px 0;
+}
+
+.trust-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trust-item {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Rewards Section */
+.rewards {
+    background: #f8f9fa; /* Rewards section background color */
+    color: #333;
+    padding: 50px 0;
+}
+
+.reward-details {
+    text-align: center;
+}
+
+/* Dashboard Section */
+.dashboard {
+    background-color: #007bff; /* Dashboard section background color */
+    color: white;
+    padding: 50px 0;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dashboard-item {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid, .trust-grid, .dashboard-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item, .trust-item, .dashboard-item {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* styles.css */
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.dashboard h2, 
+.dashboard p, 
+.dashboard h3 {
+    color: black; /* Changes the text color to black */
+}
+
+/* General Section Styling */
+#impact-dashboard {
+    background-color: #f4f7fa;
+    padding: 60px 0;
+}
+
+#impact-dashboard h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#impact-dashboard p {
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Grid Layout */
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* Individual Analytics Item */
+.analytics-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.analytics-item h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.analytics-item p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin: 5px 0;
+}
+
+.analytics-item p:first-of-type {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.analytics-item p:nth-of-type(2) {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #impact-dashboard h2 {
+        font-size: 2rem;
+    }
+
+    .analytics-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .analytics-item p {
+        font-size: 1rem;
+    }
+}
+/* Add this in your style.css file */
+header, .hero {
+    background-image: url('images/abstract-digital-grid-black-background\ \(1\).jpg'); /* Replace 'your-image-path.jpg' with the actual image path */
+    background-size: cover;    /* Ensures the image covers the entire section */
+    background-position: center center;  /* Positions the image at the center */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    color: white;  /* Makes sure the text color stands out on the background image */
+    padding: 50px 0;  /* Adds some padding for better layout */
+}
+header h1 {
+    color: white; /* Changes the "Host Marketplace" text color to white */
+}
+
+header nav ul li a {
+    color: white; /* Changes the navigation links color to white */
+}
+
+header nav ul li a:hover {
+    color: #ccc; /* Optional: Changes link color on hover to a lighter shade */
+}

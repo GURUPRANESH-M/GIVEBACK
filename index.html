@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Company Marketplace - Expanded</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <h1>Host Marketplace</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#trusts">Organizations in Need</a></li>
+                    <li><a href="#rewards">Rewards</a></li>
+                    <li><a href="#dashboard">Company Dashboard</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#login" class="btn login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empower Businesses & Help Communities</h1>
+            <p>Sell your excess inventory at discounted prices to trusted organizations and earn reward points for tax benefits. Let’s reduce waste and help communities thrive.</p>
+            <a href="#products" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- User Authentication Section (Login / Signup) -->
+    <section id="login" class="auth">
+        <div class="container">
+            <div class="auth-box">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p>Don’t have an account? <a href="#signup">Sign Up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="auth">
+        <div class="container">
+            <div class="auth-box">
+                <h2>Create an Account</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" id="company-name" name="company-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Filtering & Sorting -->
+<section id="products" class="products">
+    <div class="container">
+        <h2>Available Products</h2>
+        <p>Filter and sort the available excess inventory to find what you need for your organization.</p>
+        <div class="filter-sort">
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="all">All Categories</option>
+                <option value="food">Food</option>
+                <option value="clothing">Clothing</option>
+                <option value="medical">Medical Supplies</option>
+                <option value="electronics">Electronics</option>
+                <option value="household">Household Goods</option>
+            </select>
+
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="recent">Recently Added</option>
+            </select>
+        </div>
+
+        <!-- Product Listings -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0026.jpg" alt="Packaged Food">
+                <h3>Packaged Food</h3>
+                <p>Discounted Price: $10</p>
+                <p>Expires in: 3 months</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0022.jpg" alt="Excess Clothing">
+                <h3>Excess Clothing</h3>
+                <p>Discounted Price: $5/piece</p>
+                <p>Condition: Like New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0023.jpg" alt="Medical Kits">
+                <h3>Medical Kits</h3>
+                <p>Discounted Price: $25/kit</p>
+                <p>Condition: New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0032.jpg" alt="Laptop Computers">
+                <h3>Laptop Computers</h3>
+                <p>Discounted Price: $200</p>
+                <p>Condition: Refurbished</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0024.jpg" alt="Canned Goods">
+                <h3>Canned Goods</h3>
+                <p>Discounted Price: $1.50/can</p>
+                <p>Expires in: 6 months</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0034.jpg" alt="Winter Jackets">
+                <h3>Winter Jackets</h3>
+                <p>Discounted Price: $15/piece</p>
+                <p>Condition: Slightly Used</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0031.jpg" alt="Surgical Masks">
+                <h3>Surgical Masks</h3>
+                <p>Discounted Price: $50/box (100 masks)</p>
+                <p>Condition: New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0030.jpg" alt="Smartphones">
+                <h3>Smartphones</h3>
+                <p>Discounted Price: $120</p>
+                <p>Condition: Good</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0009.jpg" alt="Cleaning Supplies">
+                <h3>Cleaning Supplies</h3>
+                <p>Discounted Price: $8/pack</p>
+                <p>Includes: 5 cleaning solutions</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0017.jpg" alt="Dried Fruit">
+                <h3>Dried Fruit Packs</h3>
+                <p>Discounted Price: $7/pack</p>
+                <p>Expires in: 9 months</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0020.jpg" alt="Shoes">
+                <h3>Excess Shoes</h3>
+                <p>Discounted Price: $12/pair</p>
+                <p>Condition: Like New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0033.jpg" alt="Tablets">
+                <h3>Tablets</h3>
+                <p>Discounted Price: $180</p>
+                <p>Condition: Slightly Used</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0025.jpg" alt="First Aid Kits">
+                <h3>First Aid Kits</h3>
+                <p>Discounted Price: $20/kit</p>
+                <p>Condition: New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0011.jpg" alt="Bedding Sets">
+                <h3>Bedding Sets</h3>
+                <p>Discounted Price: $40/set</p>
+                <p>Condition: Good</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0028.jpg" alt="Pasta Packs">
+                <h3>Pasta Packs</h3>
+                <p>Discounted Price: $2/pack</p>
+                <p>Expires in: 1 year</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0015.jpg" alt="Desktop Computers">
+                <h3>Desktop Computers</h3>
+                <p>Discounted Price: $300</p>
+                <p>Condition: Refurbished</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0018.jpg" alt="Excess Hats">
+                <h3>Excess Hats</h3>
+                <p>Discounted Price: $4/piece</p>
+                <p>Condition: New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0016.jpg" alt="Disposable Gloves">
+                <h3>Disposable Gloves</h3>
+                <p>Discounted Price: $15/box (200 gloves)</p>
+                <p>Condition: New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0029.jpg" alt="Printers">
+                <h3>Printers</h3>
+                <p>Discounted Price: $50</p>
+                <p>Condition: Like New</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product-item">
+                <img src="images/IMG-20241019-WA0021.jpg" alt="Furniture">
+                <h3>Excess Furniture</h3>
+                <p>Discounted Price: $75/item</p>
+                <p>Condition: Good</p>
+                <button class="btn">Sell to Organization</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Trust Organizations Section with Pages for Each Trust -->
+    <section id="trusts" class="trusts">
+        <div class="container">
+            <h2>Organizations in Need</h2>
+            <p>Sell your excess products to these trusted organizations that need essential goods.</p>
+
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h3><a href="#trust-details">Charity Food Bank</a></h3>
+                    <p>Accepting: Food, Clothing</p>
+                    <a href="#trust-details" class="btn">View Details</a>
+                </div>
+
+                <div class="trust-item">
+                    <h3><a href="#trust-details">Community Clothing Bank</a></h3>
+                    <p>Accepting: Clothing, Shoes</p>
+                    <a href="#trust-details" class="btn">View Details</a>
+                </div>
+                <!-- Add more trust items dynamically -->
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Rewards Section Expanded with GST/Tax Reduction -->
+    <section id="rewards" class="rewards">
+        <div class="container">
+            <h2>Earn Rewards & Tax Reductions</h2>
+            <p>Earn points for selling excess inventory to organizations. Use these points for GST and tax reductions.</p>
+
+            <div class="reward-details">
+                <p><strong>For every $100 worth of products sold, companies earn 50 points.</strong> Accumulate 1000 points to unlock a 5% GST reduction.</p>
+                <div class="leaderboard">
+                    <h3>Leaderboard</h3>
+                    <ul>
+                        <li>Company A: 1500 points</li>
+                        <li>Company B: 1200 points</li>
+                        <li>Company C: 800 points</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Dashboard for Tracking Sales, Points, and Tax Reduction -->
+    <!-- Impact Analytics Dashboard -->
+ <!-- Impact Analytics Dashboard with Images -->
+<section id="impact-dashboard" class="impact-dashboard">
+    <div class="container">
+        <h2>Impact Analytics Dashboard</h2>
+        <p>Track the positive environmental impact of your contributions to the community.</p>
+
+        <div class="analytics-grid">
+            <!-- Carbon Footprint Reduction -->
+            <div class="analytics-item">
+                <img src="images/IMG-20241019-WA0010.jpg" alt="Carbon Footprint Reduction" class="analytics-icon">
+                <h3>Carbon Footprint Reduction</h3>
+                <p>Total Reduction: 3,500 kg CO2</p>
+                <p>Your Contributions: 500 kg CO2 reduced from excess inventory sold</p>
+            </div>
+
+            <!-- Waste Reduction -->
+            <div class="analytics-item">
+                <img src="images/IMG-20241019-WA0027.jpg" alt="Waste Reduction" class="analytics-icon">
+                <h3>Waste Reduction</h3>
+                <p>Saved: 1000 kg of materials</p>
+                <p>Food and supplies sold helped reduce waste and landfill use</p>
+            </div>
+
+            <!-- Community Engagement -->
+            <div class="analytics-item">
+                <img src="images/IMG-20241019-WA0014.jpg" alt="Community Engagement" class="analytics-icon">
+                <h3>Community Engagement</h3>
+                <p>Organizations Supported: 10</p>
+                <p>Your products provided for: 300+ families in need</p>
+            </div>
+
+            <!-- Energy Savings -->
+            <div class="analytics-item">
+                <img src="images/IMG-20241019-WA0019.jpg" alt="Energy Savings" class="analytics-icon">
+                <h3>Energy Savings</h3>
+                <p>Total Savings: 1200 kWh</p>
+                <p>Your product contributions have helped save energy through reuse and recycling</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer style="text-align: center; padding: 10px; background-color: #333; color: #fff; font-size: 14px;">
+    &copy; <span id="currentYear"></span> GIVE BACK. All rights reserved.
+</footer>
